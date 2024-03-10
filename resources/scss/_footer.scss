@@ -1,19 +1,19 @@
 @use 'variables' as variables;
 
 .image-bkg {
-    background-image: url('../assets/img/footer-bg.jpg');
+    background-image: url('../../resources/img/footer-bg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 400px;
 }
 
-h3 {
+.h3-footer {
     color: white;
     margin-bottom: 10px;
 }
 
-ul {
+.ul-footer {
     margin-top: 30px;
 }
 
@@ -37,7 +37,7 @@ ul {
     margin-top: 10px;
 }
 
-button {
+.button-footer {
     padding: 10px;
     background-color: transparent;
     color: white;
@@ -45,7 +45,7 @@ button {
     cursor: pointer;
 }
 
-span {
+.span-footer {
     color: variables.$color;
     text-wrap: nowrap;
 }
@@ -68,6 +68,10 @@ span {
     align-items: center;
 }
 
-a {
+.a-footer {
     color: gray;
+}
+
+li {
+    margin-bottom: 5px;
 }

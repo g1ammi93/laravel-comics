@@ -45,3 +45,33 @@ button {
     display: flex;
     justify-content: center;
 }
+
+.book-card {
+    padding: 20px;
+    background-color: transparent;
+    border: lightblue;
+    height: 180px;
+    width: 180px;
+    margin-bottom: 10px;
+
+
+}
+
+.h3-card {
+    color: white;
+    font-size: 12px;
+    margin-top: 5px;
+    font-weight: normal;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.img-card {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    cursor: pointer;
+
+}

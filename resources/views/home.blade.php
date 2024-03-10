@@ -5,14 +5,16 @@
 @section('main-content')
 
     <div class="container content">
-        @foreach ($comics as $comic)
-            <div class="card-container">
-                <a href="{{ url('/comic') }}">
-                    <img src="{{ $comic['thumb'] }}" :alt="{{ $comic['series'] }}">
-                </a>
-                <p>{{ $comic['series'] }}</p>
-            </div>
-        @endforeach
+        <div class="card-container">
+            @foreach ($comics as $comic)
+                <div class="book-card">
+                    <a href="{{ url('/comic') }}">
+                        <img src="{{ $comic['thumb'] }}" :alt="{{ $comic['series'] }}" class="img-card">
+                    </a>
+                    <h3 class="h3-card">{{ $comic['series'] }}</h3>
+                </div>
+            @endforeach
+        </div>
 
     </div>
     <div class="flex-center">

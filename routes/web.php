@@ -16,9 +16,17 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $comics = config('comics');
     return view('home', compact('comics'));
-});
+})->name('home');
 
-Route::get('/comics', function () {
+// Route::get('/comics', function () {
 
-    return view('comics.index', compact('comics'));
-})->name('comics');
+//     return view('comics.index', compact('comics'));
+// })->name('comics');
+
+
+Route::get('/comic/{index}', function ($index) {
+    $comics = config('comics');
+
+    $comic = $comics[$index];
+    return view('layouts.books.comic', compact('comic'));
+})->name('comic');

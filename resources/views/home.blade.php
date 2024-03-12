@@ -6,9 +6,9 @@
 
     <div class="container content">
         <div class="card-container">
-            @foreach ($comics as $comic)
+            @foreach ($comics as $index => $comic)
                 <div class="book-card">
-                    <a href="{{ url('/comic') }}">
+                    <a href="{{ url("/comic/$index") }}">
                         <img src="{{ $comic['thumb'] }}" :alt="{{ $comic['series'] }}" class="img-card">
                     </a>
                     <h3 class="h3-card">{{ $comic['series'] }}</h3>

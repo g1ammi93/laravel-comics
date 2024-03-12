@@ -1,6 +1,8 @@
 <header>
     <div class="container div-header">
-        <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="Logo Dc comics" class="img-header">
+        <a href="{{ url('/') }}">
+            <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="Logo Dc comics" class="img-header">
+        </a>
         <ul class="ul-header">
             @foreach (config('header_nav') as $nav)
                 <li>
